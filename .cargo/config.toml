@@ -1,0 +1,4 @@
+# This is what turns it from a console app into a windows app.
+# Note that this also disables standard out.
+[target.'cfg(windows)']
+rustflags = ["-C", "link-args=/SUBSYSTEM:WINDOWS", "-C", "link-args=/ENTRY:mainCRTStartup"]
