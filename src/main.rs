@@ -34,7 +34,7 @@ fn copy_file_if_larger(source: &Path, dest: &Path) {
         }
         _ => {
             println!("Sizes are equal.")
-        } // Sizes are equal or there was an error
+        }
     }
 }
 
